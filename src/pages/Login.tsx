@@ -5,9 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
-import { FaVk } from "react-icons/fa";
-import { FcGoogle } from "react-icons/fc";
-import { SiDiscord } from "react-icons/si";
+import { Chrome, MessageCircle, Mail } from "lucide-react";
 import NavBar from "@/components/NavBar";
 
 const Login = () => {
@@ -146,13 +144,13 @@ const Login = () => {
 
                 <div className="mt-6 grid grid-cols-3 gap-3">
                   <Button variant="outline" className="border-anisoul-purple-medium/30 hover:bg-anisoul-purple-medium/20">
-                    <FaVk className="h-5 w-5 text-blue-400" />
+                    <Mail className="h-5 w-5 text-blue-400" />
                   </Button>
                   <Button variant="outline" className="border-anisoul-purple-medium/30 hover:bg-anisoul-purple-medium/20">
-                    <FcGoogle className="h-5 w-5" />
+                    <Chrome className="h-5 w-5" />
                   </Button>
                   <Button variant="outline" className="border-anisoul-purple-medium/30 hover:bg-anisoul-purple-medium/20">
-                    <SiDiscord className="h-5 w-5 text-indigo-400" />
+                    <MessageCircle className="h-5 w-5 text-indigo-400" />
                   </Button>
                 </div>
               </div>
