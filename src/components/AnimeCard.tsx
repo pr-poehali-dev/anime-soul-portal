@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { Link } from "react-router-dom";
 
 interface AnimeCardProps {
   id: string;
@@ -23,7 +24,8 @@ const AnimeCard = ({
   className,
 }: AnimeCardProps) => {
   return (
-    <div 
+    <Link 
+      to={`/anime/${id}`}
       className={cn(
         "relative overflow-hidden rounded-lg bg-anisoul-gray-dark card-hover",
         className
@@ -67,7 +69,7 @@ const AnimeCard = ({
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
